@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System Guide</title>
+    <link rel="stylesheet" href="css/styleGuide.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Demo</a>
+            <a href="guide.html" class="active">Guide</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Guide to the Grid System</h1>
+        <p>This guide explains how to use the grid system defined in <code>grid.css</code>.</p>
+
+        <section>
+            <h2>1. Grid Container</h2>
+            <p>To create a grid, wrap your content inside a container with class <code>.grid</code>.</p>
+            <pre><code>&lt;div class="grid"&gt; ... &lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>2. Rows and Columns</h2>
+            <p>Inside the grid container, use <code>.row</code> to define rows. Each row contains columns using the
+                <code>.col</code> class.
+            </p>
+            <pre><code>&lt;div class="row"&gt;
+    &lt;div class="col c-4"&gt;Content&lt;/div&gt;
+    &lt;div class="col c-4"&gt;Content&lt;/div&gt;
+    &lt;div class="col c-4"&gt;Content&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>3. Column Sizing</h2>
+            <p>Columns are divided into a 12-part grid. Example:</p>
+            <ul>
+                <li><code>c-6</code>: Takes up half of the row (6/12 columns).</li>
+                <li><code>c-4</code>: Takes up one-third of the row (4/12 columns).</li>
+                <li><code>c-3</code>: Takes up one-fourth of the row (3/12 columns).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Offset Columns</h2>
+            <p>Use <code>c-o-*</code> to shift columns to the right.</p>
+            <pre><code>&lt;div class="col c-4 c-o-2"&gt;Shifted Column&lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>5. Responsive Design</h2>
+            <p>You can use <code>m-*</code> (medium screens) and <code>s-*</code> (small screens) for responsive
+                layouts.</p>
+            <pre><code>&lt;div class="col c-12 m-6 s-4"&gt;Responsive Column&lt;/div&gt;</code></pre>
+        </section>
+    </div>
+</body>
+
+</html>
